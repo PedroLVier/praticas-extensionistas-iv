@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#fff"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11 z" fill="#222"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #111; }
+    .body { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #111; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #333; }
+    .stereo { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #222; }
+    .edge { fill: none; stroke: #222; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .box { fill: #fff; stroke: #222; stroke-width: 2.2; }
+    .soft { fill: #fafafa; stroke: #222; stroke-width: 2.2; }
+    .subtle { fill: #f5f5f5; stroke: #222; stroke-width: 2; }
+  </style>
+
+  <text x="800" y="58" text-anchor="middle" class="title">Diagrama de Arquitetura de Implantação - Barbearia</text>
+<rect x="70" y="285" width="310" height="280" rx="34" class="soft"/>
+  <text x="225" y="328" text-anchor="middle" class="stereo">«device»</text>
+  <text x="225" y="358" text-anchor="middle" class="label">Dispositivo do usuário</text>
+  <rect x="110" y="395" width="230" height="115" rx="18" class="box"/>
+  <text x="225" y="430" text-anchor="middle" class="stereo">«executionEnvironment»</text>
+  <text x="225" y="462" text-anchor="middle" class="label">Navegador / PWA</text>
+  <text x="225" y="488" text-anchor="middle" class="small">Service Worker + cache local</text>
+<rect x="505" y="150" width="1010" height="610" rx="40" class="soft"/>
+  <text x="1010" y="194" text-anchor="middle" class="stereo">«cloud»</text>
+  <text x="1010" y="226" text-anchor="middle" class="label">Render</text>
+<rect x="585" y="300" width="310" height="185" rx="24" class="box"/>
+  <text x="740" y="336" text-anchor="middle" class="stereo">«executionEnvironment»</text>
+  <text x="740" y="367" text-anchor="middle" class="label">Static Site</text>
+  <rect x="625" y="397" width="230" height="62" rx="12" class="subtle"/>
+  <text x="740" y="424" text-anchor="middle" class="body">Frontend PWA - React</text>
+  <text x="740" y="448" text-anchor="middle" class="small">Web App Manifest</text>
+<rect x="1000" y="300" width="310" height="185" rx="24" class="box"/>
+  <text x="1155" y="336" text-anchor="middle" class="stereo">«executionEnvironment»</text>
+  <text x="1155" y="367" text-anchor="middle" class="label">Web Service</text>
+  <rect x="1038" y="397" width="234" height="62" rx="12" class="subtle"/>
+  <text x="1155" y="424" text-anchor="middle" class="body">Backend / API</text>
+  <text x="1155" y="448" text-anchor="middle" class="small">Node.js + Express</text>
+<rect x="1000" y="570" width="310" height="120" rx="24" class="box"/>
+  <text x="1155" y="607" text-anchor="middle" class="stereo">«database»</text>
+  <text x="1155" y="640" text-anchor="middle" class="label">PostgreSQL</text>
+  <text x="1155" y="666" text-anchor="middle" class="small">Dados da aplicação</text>
+<path d="M380 425 H585" class="edge" marker-end="url(#arrow)"/>
+  <text x="482" y="408" text-anchor="middle" class="small">HTTPS</text>
+  <path d="M895 392 H1000" class="edge" marker-end="url(#arrow)"/>
+  <text x="948" y="376" text-anchor="middle" class="small">HTTPS / REST</text>
+  <path d="M1155 485 V570" class="edge" marker-end="url(#arrow)"/>
+  <text x="1172" y="532" class="small">SQL / TLS</text>
+<rect x="95" y="640" width="370" height="88" rx="18" class="soft" stroke-dasharray="9 7"/>
+  <text x="280" y="674" text-anchor="middle" class="label">Comportamento PWA</text>
+  <text x="280" y="702" text-anchor="middle" class="small">Instalável e com cache controlado no cliente</text>
+</svg>

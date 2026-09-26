@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#fff"/>
+  <defs>
+    <marker id="openArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#222" stroke-width="1.6"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #111; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #333; }
+    .box { fill: #fff; stroke: #222; stroke-width: 2.2; }
+    .soft { fill: #fafafa; stroke: #222; stroke-width: 2.2; }
+    .dep { fill: none; stroke: #222; stroke-width: 2; stroke-dasharray: 9 7; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <text x="800" y="58" text-anchor="middle" class="title">Diagrama UML de Pacotes - Barbearia</text>
+<path d="M100 208 L100 310 L380 310 L380 208 L226 208 L226 190 L100 190 Z" class="box"/>
+  <text x="240" y="238" text-anchor="middle" class="label">Interface Web / PWA</text>
+  <text x="240" y="266" text-anchor="middle" class="small">React</text>
+  <text x="240" y="289" text-anchor="middle" class="small">Manifest + Service Worker</text>
+<path d="M480 208 L480 310 L760 310 L760 208 L606 208 L606 190 L480 190 Z" class="box"/>
+  <text x="620" y="238" text-anchor="middle" class="label">Autenticação</text>
+  <text x="620" y="274" text-anchor="middle" class="small">Sessão e acesso</text>
+<path d="M860 208 L860 310 L1140 310 L1140 208 L986 208 L986 190 L860 190 Z" class="box"/>
+  <text x="1000" y="238" text-anchor="middle" class="label">Agendamentos</text>
+  <text x="1000" y="274" text-anchor="middle" class="small">Regras de agendamento</text>
+<path d="M270 478 L270 572 L520 572 L520 478 L382 478 L382 460 L270 460 Z" class="box"/>
+  <text x="395" y="510" text-anchor="middle" class="label">Clientes</text>
+  <text x="395" y="544" text-anchor="middle" class="small">Cadastro e consulta</text>
+<path d="M675 478 L675 572 L925 572 L925 478 L787 478 L787 460 L675 460 Z" class="box"/>
+  <text x="800" y="510" text-anchor="middle" class="label">Profissionais</text>
+  <text x="800" y="544" text-anchor="middle" class="small">Cadastro e disponibilidade</text>
+<path d="M1080 478 L1080 572 L1330 572 L1330 478 L1192 478 L1192 460 L1080 460 Z" class="box"/>
+  <text x="1205" y="510" text-anchor="middle" class="label">Serviços</text>
+  <text x="1205" y="544" text-anchor="middle" class="small">Catálogo de serviços</text>
+<path d="M675 698 L675 800 L925 800 L925 698 L787 698 L787 680 L675 680 Z" class="box"/>
+  <text x="800" y="729" text-anchor="middle" class="label">Persistência</text>
+  <text x="800" y="758" text-anchor="middle" class="small">Acesso a dados</text>
+  <text x="800" y="781" text-anchor="middle" class="small">PostgreSQL</text>
+<path d="M380 250 H480" class="dep" marker-end="url(#openArrow)"/>
+  <path d="M760 250 H860" class="dep" marker-end="url(#openArrow)"/>
+<path d="M1000 310 V374 H395 V460" class="dep" marker-end="url(#openArrow)"/>
+  <path d="M1000 310 V402 H800 V460" class="dep" marker-end="url(#openArrow)"/>
+  <path d="M1000 310 V430 H1205 V460" class="dep" marker-end="url(#openArrow)"/>
+<path d="M395 572 V620 H640 V720 H675" class="dep" marker-end="url(#openArrow)"/>
+  <path d="M800 572 V680" class="dep" marker-end="url(#openArrow)"/>
+  <path d="M1205 572 V620 H960 V720 H925" class="dep" marker-end="url(#openArrow)"/>
+<path d="M620 310 V342 H180 V780 H675" class="dep" marker-end="url(#openArrow)"/>
+
+  <rect x="1035" y="700" width="420" height="82" rx="18" class="soft" stroke-dasharray="10 8"/>
+  <text x="1245" y="734" text-anchor="middle" class="label">Notação</text>
+  <text x="1245" y="762" text-anchor="middle" class="small">Setas tracejadas indicam dependências UML</text>
+</svg>
